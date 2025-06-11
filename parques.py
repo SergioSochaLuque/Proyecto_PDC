@@ -1,35 +1,24 @@
+# inicializar_tablero.py
+def inicializar_tablero():
+    # Lista de 68 posiciones del recorrido principal
+    recorrido = list(range(68))
+    # Diccionarios para casas y metas
+    casas = {color: [] for color in ['rojo','verde','amarillo','azul']}
+    metas = {color: [] for color in ['rojo','verde','amarillo','azul']}
+    return recorrido, casas, metas
+
+# dado.py
 import random
 
-# Inicializar tablero (68 casillas vacías)
-tablero = [""] * 68
+def tirar_dado():
+    return random.randint(1,6)
 
-# Posiciones de salida por equipo
-salidas = {"rojo": 5, "azul": 22, "verde": 39, "amarillo": 56}
+# movimiento.py
 
-# Fichas por equipo (cada ficha es [posicion, estado])
-fichas = {
-    "rojo": [["carcel", 0], ["carcel", 0], ["carcel", 0], ["carcel", 0]],
-    "azul": [["carcel", 0], ["carcel", 0], ["carcel", 0], ["carcel", 0]],
-}
-
-def lanzar_dados():
-    return random.randint(1, 6), random.randint(1, 6)
-
-def dibujar_tablero():
-    # Dibujo simplificado con casillas numeradas
-    for i in range(68):
-        print(f"[{i+1}: {tablero[i]}]", end=" ")
-    print()
-
-# Bucle principal (ejemplo)
-turno = 0
-equipos = ["rojo", "azul", "verde", "amarillo"]
-
-while True:
-    equipo_actual = equipos[turno % 4]
-    dado1, dado2 = lanzar_dados()
-    print(f"Turno de {equipo_actual}. Dados: {dado1}, {dado2}")
-    
-    # Lógica de movimiento aquí
-    
-    turno += 1
+def mover_ficha(pos_actual, pasos, recorrido):
+    nueva_pos = pos_actual + pasos
+    if nueva_pos < len(recorrido):
+        return nueva_pos
+    else:
+        # lógica de llegada a meta (pendiente)
+        return None
