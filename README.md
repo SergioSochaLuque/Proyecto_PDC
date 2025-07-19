@@ -8,5 +8,12 @@ Este proyecto es una implementación del juego de mesa "Parques Tradicional" uti
     * Captura de fichas enemigas
     * Movimientos bonus por capturas y entradas a la vía interna
     * Bloqueos con dos fichas del mismo color
-    * 
-
+    * Penalización por tres dobles consecutivos
+    * Requisito de exactitud para entrar a la vía interna y meta}
+- Interfaz gráfica intuitiva con representación visual del tablero
+- Sistema de selección de fichas mediante clics
+# Requisitos
+- Python 3.6 o superior
+- Biblioteca Tkinter (normalmente incluida en instalaciones estándar de Python)
+# Instrucciones de Ejecución
+1. Clona el repositorio o descarga el archivo --parques.py
