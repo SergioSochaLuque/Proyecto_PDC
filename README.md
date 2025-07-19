@@ -21,4 +21,34 @@ Este proyecto es una implementación del juego de mesa "Parques Tradicional" uti
 ````python
 python parques.py
 ````
-
+# Controles del Juego
+1. Lanzar dados: Haz clic en el botón "Lanzar dados" para comenzar tu turno
+2. Seleccionar ficha: Haz clic en cualquiera de tus fichas (en cárcel, tablero externo o vía interna)
+3. Usar dado: Selecciona un valor de dado para mover tu ficha seleccionada
+4. Terminar turno: Pasa al siguiente jugador cuando hayas usado todos tus dados
+# Estructura del Código:
+El código está organizado en las siguientes secciones principales:
+   1. Parámetros Globales y Constantes
+````python
+NUM_CASILLAS_EXTERNAS = 68
+NUM_CASILLAS_INTERNAS = 8
+TAMANO_TABLERO = 600
+MARGEN = 20
+CELDA = 40
+````
+Define las dimensiones del juego y constantes para el cálculo de posiciones.
+   2. Clases del Juego
+      Clase ```ficha```: Representa cada pieza del juego con su estado y posición
+      Clase ```jugador```: Gestiona las fichas, contadores de dobles y movimientos extra
+   3. Inicialización de Jugadores
+````python
+jugadores = [
+    Jugador("Rojo", "red", salida=0, entrada_hogar=67),
+    Jugador("Azul", "blue", salida=17, entrada_hogar=16),
+    ...
+]
+````
+Crea los cuatro jugadores con sus características únicas.
+   4. Sistema de Posiciones
+      ```posiciones_de_tablero```: Diccionario que rastrea fichas en cada casilla
+      ```casillas_seguras```: Casillas donde no se pueden capturar fichas
