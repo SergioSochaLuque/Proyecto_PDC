@@ -67,3 +67,18 @@ Crea los cuatro jugadores con sus características únicas.
       -```dibujar_tablero()```: Renderiza todos los elementos visuales
       -```lanzar_dados()```: Maneja la lógica de lanzamiento
       -```al_hacer_click_en_canvas()```: Detecta interacciones del jugador
+# Reglas del Juego Implementadas:
+1. Para sacar una ficha de la cárcel se necesita un 5
+
+2. Movimiento exacto requerido para entrar a la vía interna
+
+3.Captura de fichas enemigas en casillas no seguras (20 casillas bonus)
+
+4. Bloqueos con dos fichas del mismo jugador
+
+5. Tres dobles consecutivos envían la última ficha movida a la cárcel
+
+6. Movimientos extra por capturas y entradas a la vía interna
+
+7. Ganador: primer jugador en llevar todas sus fichas a la última casilla interna
+
