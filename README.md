@@ -17,3 +17,8 @@ Este proyecto es una implementación del juego de mesa "Parques Tradicional" uti
 - Biblioteca Tkinter (normalmente incluida en instalaciones estándar de Python)
 # Instrucciones de Ejecución
 1. Clona el repositorio o descarga el archivo ```parques.py```
+2. Ejecuta el siguiente comando en tu terminal:
+````python
+python parques.py
+````
+
