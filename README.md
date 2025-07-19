@@ -52,3 +52,14 @@ Crea los cuatro jugadores con sus características únicas.
    4. Sistema de Posiciones
       ```posiciones_de_tablero```: Diccionario que rastrea fichas en cada casilla
       ```casillas_seguras```: Casillas donde no se pueden capturar fichas
+   5. Funciones de Lógica del Juego
+      ```s_bloqueo()```: Detecta bloqueos de dos fichas del mismo color
+      ```verificar_camino()```: Comprueba si el camino entre casillas está libre
+      ```mover_ficha()```: Implementa todas las reglas de movimiento
+   6. Cálculo de Coordenadas
+      -Sistema para mapear posiciones lógicas a coordenadas gráficas
+      -Funciones específicas para tablero externo y vías internas
+   7. Interfaz Gráfica (```InterfazParques```)
+      -```dibujar_tablero()```: Renderiza todos los elementos visuales
+      -```lanzar_dados()```: Maneja la lógica de lanzamiento
+      -```al_hacer_click_en_canvas()```: Detecta interacciones del jugador
