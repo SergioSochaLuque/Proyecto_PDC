@@ -72,7 +72,7 @@ Crea los cuatro jugadores con sus características únicas.
 
 2. Movimiento exacto requerido para entrar a la vía interna
 
-3.Captura de fichas enemigas en casillas no seguras (20 casillas bonus)
+3. Captura de fichas enemigas en casillas no seguras (20 casillas bonus)
 
 4. Bloqueos con dos fichas del mismo jugador
 
