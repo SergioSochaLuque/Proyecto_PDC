@@ -14,7 +14,7 @@ Este proyecto es una implementación del juego de mesa "Parques Tradicional" uti
 - Sistema de selección de fichas mediante clics
 # Requisitos
 - Python 3.6 o superior
-- Biblioteca Tkinter (normalmente incluida en instalaciones estándar de Python)
+- Biblioteca pygame
 # Instrucciones de Ejecución
 1. Clona el repositorio o descarga el archivo ```parques.py```
 2. Ejecuta el siguiente comando en tu terminal:
