@@ -114,6 +114,7 @@ coordenadas_de_la_via_interna = {
 }
 ````
 Sistema para mapear posiciones lógicas a coordenadas gráficas en pantalla.
+   
    6. Interfaz Gráfica con Pygame
 ````python
 class InterfazParquesPygame:
