@@ -44,6 +44,7 @@ COLOR_TABLERO = (220, 220, 200)
 # ... (otros colores)
 ````
 Define las dimensiones del juego y constantes para el cálculo de posiciones.
+   
    2. Clases del Juego
       Clase ```ficha```: Representa cada pieza del juego con su estado y posición
 ````python
